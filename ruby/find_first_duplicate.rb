@@ -1,5 +1,13 @@
 def find_first_duplicate(arr)
   # type your code in here
+  duplicates = []
+
+  arr.each do |val|
+    return val if duplicates[val]
+    duplicates[val] = true
+  end
+  
+  -1
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -16,3 +24,7 @@ end
 
 # Please add your pseudocode to this file
 # And a written explanation of your solution
+
+# Eva's notes
+
+
